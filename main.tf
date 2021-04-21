@@ -37,3 +37,13 @@ resource "aws_vpc" "tf_vpc01" {
     "project": "tf-learn03"
   } 
 }
+
+resource "aws_vpc" "tf_vpc02" {
+  cidr_block = "10.0.0.0/16"
+  instance_tenancy = "default"
+
+  tags = {
+    Name: "tf-vpc02"
+    "project": "tf-learn03"
+  } 
+}
